@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Footer } from '../components/Footer'
 import { Links } from '../components/Links'
 import { Headline } from '../components/Headline'
+import { Main } from '../components/Main'
 
 export default function Home() {
   return (
@@ -13,13 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Headline title="About Page" emoji="😆" />
+      <Main
+        title="About Page" emoji="😆" code={<code className={styles.code}>pages/about.js</code>} onClick={() => alert("aboutのボタンがクリックされた")}
+      />
 
-        <Links T1="😆" T2="😢" T3="🎅" T4="😢" />
-      </main>
-
-      <Footer />
+      <Footer
+        name="Oyama Junya"
+      />
     </div>
   )
 }

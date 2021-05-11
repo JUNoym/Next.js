@@ -5,13 +5,13 @@ export function Links(props) {
 
         <div className={styles.grid}>
             <a href="https://nextjs.org/docs" className={styles.card}>
-                <h2>{props.T1}  &rarr;</h2>
+                <h2>{props.emoji}  &rarr;</h2>
 
                 <p>Find in-depth information about Next.js features and API.</p>
             </a>
 
             <a href="https://nextjs.org/learn" className={styles.card}>
-                <h2>{props.T2} &rarr;</h2>
+                <h2>{props.emoji} &rarr;</h2>
 
                 <p>Learn about Next.js in an interactive course with quizzes!</p>
             </a>
@@ -20,7 +20,7 @@ export function Links(props) {
                 href="https://github.com/vercel/next.js/tree/master/examples"
                 className={styles.card}
             >
-                <h2>{props.T3} &rarr;</h2>
+                <h2>{props.emoji} &rarr;</h2>
 
                 <p>Discover and deploy boilerplate example Next.js projects.</p>
             </a>
@@ -29,7 +29,7 @@ export function Links(props) {
                 href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 className={styles.card}
             >
-                <h2>{props.T4} &rarr;</h2>
+                <h2>{props.emoji} &rarr;</h2>
 
                 <p>
                     Instantly deploy your Next.js site to a public URL with Vercel.

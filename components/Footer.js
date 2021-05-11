@@ -1,7 +1,7 @@
 
 import styles from '../styles/Home.module.css'
 
-export function Footer() {
+export function Footer(props) {
     return (
 
         <footer className={styles.footer}>
@@ -10,7 +10,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                サンクス by{' 大山純矢 '}
+                サンクス by {props.name}
                 <span className={styles.logo}>
 
                 </span>
@@ -18,3 +18,4 @@ export function Footer() {
         </footer>
     )
 }
+
